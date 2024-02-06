@@ -2,7 +2,7 @@ fn main() {
     let s = String::from("hello, world");
     let slice1 = get_first_word(&s);
     assert_eq!(slice1, "hello,");
-    assert_eq!(s, "hello,");
+    assert_eq!(s.len(), 12);
 }
 
 fn get_first_word(s:&str) -> &str {
